@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-const moment = require('moment');
 
 const HighScoreSchema = mongoose.Schema({
   score: {
@@ -19,6 +18,6 @@ HighScoreSchema.methods.apiRepr = function() {
   };
 }
 
-const HighScore = mongoose.model('simonhighscores', HighScoreSchema, 'highscores');
+const HighScore = mongoose.model('simonhighscore', HighScoreSchema, 'highscores');
 
 module.exports = {HighScore};

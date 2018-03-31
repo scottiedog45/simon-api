@@ -8,7 +8,7 @@ const {DATABASE_URL, PORT} = require('./config');
 
 const app = express();
 
-const {HighScore} = require('../models');
+const {HighScore} = require('./models');
 
 app.use(morgan('common'));
 app.use(express.json());
